@@ -1,17 +1,63 @@
-/* estilos.css */
-
-/* Estilos generales */
 body {
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #dac2c2; /* Texto claro */
+    background-color: #0d0d0d; 
+    color: #e0e0e0; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff4444;
+}
+
+header h2 {
+    color: #ff4444;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.container-fluid {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #1a1a1a; 
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 2px solid #ff4444; 
+    margin-top: auto;
+}
+
+footer p {
+    color: #e0e0e0;
+    margin: 0;
+    font-size: 1em;
+}
+
+footer p strong {
+    color: #ff4444; 
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #dac2c2;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #ff4444; /* Rojo oscuro para el título */
-    text-shadow: 2px 2px 4px #000000; /* Sombra para el texto */
+    color: #ff4444;
+    text-shadow: 2px 2px 4px #000000;
     margin-top: 20px;
 }
 
@@ -19,86 +65,84 @@ h1 {
     padding: 20px;
 }
 
-/* Estilos para el formulario */
 form {
-    background-color: #070606; /* Fondo oscuro para el formulario */
+    background-color: #070606;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 legend {
-    color: #ff4444; /* Rojo oscuro para la leyenda */
+    color: #ff4444;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .form-label {
-    color: #e60909; /* Texto claro para las etiquetas */
+    color: #e60909;
 }
 
 .form-control {
-    background-color: #3d3d3d; /* Fondo oscuro para los inputs */
-    color: #e0e0e0; /* Texto claro para los inputs */
-    border: 1px solid #130f0f; /* Borde gris */
+    background-color: #3d3d3d;
+    color: #e0e0e0; 
+    border: 1px solid #130f0f;
 }
 
 .form-control:focus {
-    border-color: #ff4444; /* Borde rojo oscuro al enfocar */
-    box-shadow: 0 0 5px rgba(255, 68, 68, 0.5); /* Sombra roja al enfocar */
+    border-color: #ff4444; 
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.5); 
 }
 
 .btn-primary {
-    background-color: #ff4444; /* Fondo rojo oscuro para el botón */
-    border-color: #ff4444; /* Borde rojo oscuro para el botón */
-    color: #e0e0e0; /* Texto claro para el botón */
+    background-color: #ff4444; 
+    border-color: #ff4444;
+    color: #e0e0e0;
 }
 
 .btn-primary:hover {
-    background-color: #cc0000; /* Fondo rojo más oscuro al pasar el ratón */
-    border-color: #cc0000; /* Borde rojo más oscuro al pasar el ratón */
+    background-color: #cc0000;
+    border-color: #cc0000;
 }
 
-/* Estilos para la tabla */
 .table {
-    background-color: #2d2d2d; /* Fondo oscuro para la tabla */
-    color: #e0e0e0; /* Texto claro para la tabla */
+    background-color: #2d2d2d;
+    color: #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .table th, .table td {
-    border-color: #555; /* Borde gris para las celdas */
+    border-color: #555; 
 }
 
 .table thead th {
-    background-color: #444; /* Fondo oscuro para el encabezado de la tabla */
-    color: #ff4444; /* Texto rojo oscuro para el encabezado de la tabla */
+    background-color: #444;
+    color: #ff4444; 
 }
 
 .table tbody tr:hover {
-    background-color: #3d3d3d; /* Fondo oscuro al pasar el ratón sobre las filas */
+    background-color: #3d3d3d; 
 }
 
 .btn-warning {
-    background-color: #ffcc00; /* Fondo amarillo para el botón de editar */
-    border-color: #ffcc00; /* Borde amarillo para el botón de editar */
-    color: #1a1a1a; /* Texto oscuro para el botón de editar */
+    background-color: #ffcc00;
+    border-color: #ffcc00; 
+    color: #1a1a1a;
 }
 
 .btn-warning:hover {
-    background-color: #e6b800; /* Fondo amarillo más oscuro al pasar el ratón */
-    border-color: #e6b800; /* Borde amarillo más oscuro al pasar el ratón */
+    background-color: #e6b800; 
+    border-color: #e6b800;
 }
 
 .btn-danger {
-    background-color: #cc0000; /* Fondo rojo oscuro para el botón de eliminar */
-    border-color: #cc0000; /* Borde rojo oscuro para el botón de eliminar */
-    color: #e0e0e0; /* Texto claro para el botón de eliminar */
+    background-color: #cc0000;
+    border-color: #cc0000;
+    color: #e0e0e0;
 }
 
 .btn-danger:hover {
-    background-color: #990000; /* Fondo rojo más oscuro al pasar el ratón */
-    border-color: #990000; /* Borde rojo más oscuro al pasar el ratón */
+    background-color: #990000; 
+    border-color: #990000;
 }
